@@ -1,0 +1,43 @@
+@import "../style/media_mixins";
+
+.logoWrapper {
+  padding: 25px 12px 16px;
+
+  @include media-query(tablet) {
+    padding: 12px;
+  }
+}
+
+.logo {
+  display: none;
+  width: 103px;
+  height: 35px;
+
+  @include media-query(s_pc) {
+    display: block;
+  }
+
+  @include media-query(m_pc) {
+    display: block;
+  }
+
+  @include media-query(l_pc) {
+    display: block;
+  }
+
+  @include media-query(xl_pc) {
+    display: block;
+  }
+}
+
+.mobile_logo {
+  display: none;
+  width: 24px;
+  height: 24px;
+  margin-left: 5px;
+  margin-top: 24px;
+
+  @include media-query(tablet) {
+    display: block;
+  }
+}

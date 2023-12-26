@@ -1,0 +1,47 @@
+@import "../style/colors";
+@import "../style/media_mixins";
+
+.wrapper {
+  min-height: 100vh;
+  background-color: white;
+  display: flex;
+}
+
+.sidebar {
+  display: none;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: $border_color;
+  padding: 8px 12px 20px 12px;
+
+  @include media-query(tablet) {
+    display: block;
+    width: 58px;
+  }
+
+  @include media-query(s_pc) {
+    display: block;
+    width: 244px;
+  }
+
+  @include media-query(m_pc) {
+    display: block;
+    width: 244px;
+  }
+
+  @include media-query(l_pc) {
+    display: block;
+    width: 244px;
+  }
+
+  @include media-query(xl_pc) {
+    display: block;
+    width: 244px;
+  }
+}
+
+.content {
+  padding: 32px;
+  font-size: 24px;
+  font-weight: 700;
+}
